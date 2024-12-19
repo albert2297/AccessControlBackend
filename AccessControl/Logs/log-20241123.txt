@@ -1,0 +1,141 @@
+2024-11-23 00:35:59.006 -04:00 [INF] User profile is available. Using 'C:\Users\almil\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-23 00:35:59.160 -04:00 [INF] Background Task Service is starting.
+2024-11-23 00:35:59.510 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44341/swagger/index.html - null null
+2024-11-23 00:35:59.597 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-23 00:35:59.597 -04:00 [INF] Hosting environment: Development
+2024-11-23 00:35:59.598 -04:00 [INF] Content root path: C:\Users\almil\source\repos\AccessControlBackend\AccessControl
+2024-11-23 00:36:00.488 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44341/swagger/index.html - 200 null text/html;charset=utf-8 987.7935ms
+2024-11-23 00:36:00.520 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-23 00:36:00.520 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44341/swagger/index.js - null null
+2024-11-23 00:36:00.538 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44341/swagger/index.js - 200 null application/javascript;charset=utf-8 18.3226ms
+2024-11-23 00:36:00.539 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 14.3696ms
+2024-11-23 00:36:00.585 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44341/_vs/browserLink - null null
+2024-11-23 00:36:00.654 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44341/_vs/browserLink - 200 null text/javascript; charset=UTF-8 69.4487ms
+2024-11-23 00:36:00.732 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44341/swagger/v1/swagger.json - null null
+2024-11-23 00:36:01.096 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44341/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 363.1358ms
+2024-11-23 01:07:36.037 -04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44341/api/users/login - null null
+2024-11-23 01:07:36.073 -04:00 [INF] CORS policy execution successful.
+2024-11-23 01:07:36.077 -04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44341/api/users/login - 204 null null 40.0336ms
+2024-11-23 01:07:36.080 -04:00 [INF] Request starting HTTP/2 POST https://localhost:44341/api/users/login - application/json 52
+2024-11-23 01:07:36.094 -04:00 [INF] CORS policy execution successful.
+2024-11-23 01:07:36.317 -04:00 [INF] Executing endpoint 'AccessControl.Controllers.UsersController.Login (AccessControl)'
+2024-11-23 01:07:36.360 -04:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[AccessControl.Application.Dtos.Common.GenericResponseDto`1[AccessControl.Application.Dtos.Common.TokenResponseDto]]] Login(AccessControl.Application.Dtos.UserEntity.UserLoginRequestDto) on controller AccessControl.Controllers.UsersController (AccessControl).
+2024-11-23 01:07:37.796 -04:00 [WRN] The entity type 'IdentityRole' was first mapped explicitly and then ignored. Consider not mapping the entity type in the first place.
+2024-11-23 01:07:37.812 -04:00 [WRN] The entity type 'IdentityUserClaim' was first mapped explicitly and then ignored. Consider not mapping the entity type in the first place.
+2024-11-23 01:07:37.813 -04:00 [WRN] The entity type 'IdentityUserLogin' was first mapped explicitly and then ignored. Consider not mapping the entity type in the first place.
+2024-11-23 01:07:37.813 -04:00 [WRN] The entity type 'IdentityUserRole' was first mapped explicitly and then ignored. Consider not mapping the entity type in the first place.
+2024-11-23 01:07:37.814 -04:00 [WRN] The entity type 'IdentityRoleClaim' was first mapped explicitly and then ignored. Consider not mapping the entity type in the first place.
+2024-11-23 01:07:37.814 -04:00 [WRN] The entity type 'IdentityUserToken' was first mapped explicitly and then ignored. Consider not mapping the entity type in the first place.
+2024-11-23 01:07:39.618 -04:00 [INF] Executed DbCommand (129ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[CreatedDate], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UpdatedDate], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2024-11-23 01:07:39.905 -04:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'AccessControl.Application.Dtos.Common.GenericResponseDto`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-23 01:07:39.963 -04:00 [INF] Executed action AccessControl.Controllers.UsersController.Login (AccessControl) in 3598.155ms
+2024-11-23 01:07:39.964 -04:00 [INF] Executed endpoint 'AccessControl.Controllers.UsersController.Login (AccessControl)'
+2024-11-23 01:07:39.983 -04:00 [INF] Request finished HTTP/2 POST https://localhost:44341/api/users/login - 401 80 application/json; charset=utf-8 3903.6589ms
+2024-11-23 01:07:44.085 -04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44341/api/users/login - null null
+2024-11-23 01:07:44.088 -04:00 [INF] CORS policy execution successful.
+2024-11-23 01:07:44.089 -04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44341/api/users/login - 204 null null 3.9607ms
+2024-11-23 01:07:44.092 -04:00 [INF] Request starting HTTP/2 POST https://localhost:44341/api/users/login - application/json 52
+2024-11-23 01:07:44.093 -04:00 [INF] CORS policy execution successful.
+2024-11-23 01:07:44.094 -04:00 [INF] Executing endpoint 'AccessControl.Controllers.UsersController.Login (AccessControl)'
+2024-11-23 01:07:44.096 -04:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[AccessControl.Application.Dtos.Common.GenericResponseDto`1[AccessControl.Application.Dtos.Common.TokenResponseDto]]] Login(AccessControl.Application.Dtos.UserEntity.UserLoginRequestDto) on controller AccessControl.Controllers.UsersController (AccessControl).
+2024-11-23 01:07:44.220 -04:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[CreatedDate], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UpdatedDate], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+2024-11-23 01:07:44.389 -04:00 [INF] Executing OkObjectResult, writing value of type 'AccessControl.Application.Dtos.Common.GenericResponseDto`1[[AccessControl.Application.Dtos.Common.TokenResponseDto, AccessControl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-23 01:07:44.395 -04:00 [INF] Executed action AccessControl.Controllers.UsersController.Login (AccessControl) in 298.9132ms
+2024-11-23 01:07:44.395 -04:00 [INF] Executed endpoint 'AccessControl.Controllers.UsersController.Login (AccessControl)'
+2024-11-23 01:07:44.396 -04:00 [INF] Request finished HTTP/2 POST https://localhost:44341/api/users/login - 200 500 application/json; charset=utf-8 304.1483ms
+2024-11-23 01:07:44.678 -04:00 [INF] Executed DbCommand (22ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (Size = 1000), @p3='?' (Size = 4000), @p4='?' (Size = 100), @p5='?' (DbType = DateTime2), @p6='?' (DbType = DateTime2), @p7='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Logs] ([Id], [CreatedDate], [Details], [Email], [EventName], [Timestamp], [UpdatedDate], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2024-11-23 01:07:58.794 -04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44341/api/logs - null null
+2024-11-23 01:07:58.795 -04:00 [INF] CORS policy execution successful.
+2024-11-23 01:07:58.796 -04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44341/api/logs - 204 null null 3.0525ms
+2024-11-23 01:07:58.835 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44341/api/logs - null null
+2024-11-23 01:07:58.836 -04:00 [INF] CORS policy execution successful.
+2024-11-23 01:07:58.914 -04:00 [INF] Executing endpoint 'AccessControl.Controllers.LogsController.GetLogEntities (AccessControl)'
+2024-11-23 01:07:58.921 -04:00 [INF] Route matched with {action = "GetLogEntities", controller = "Logs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[AccessControl.Application.Dtos.Common.GenericResponseDto`1[AccessControl.Application.Dtos.LogEntity.LogEntityDto]]]] GetLogEntities() on controller AccessControl.Controllers.LogsController (AccessControl).
+2024-11-23 01:07:59.076 -04:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[CreatedDate], [l].[Details], [l].[Email], [l].[EventName], [l].[Timestamp], [l].[UpdatedDate], [l].[UserId], [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[CreatedDate], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UpdatedDate], [u].[UserName]
+FROM [Logs] AS [l]
+LEFT JOIN [Users] AS [u] ON [l].[UserId] = [u].[Id]
+2024-11-23 01:07:59.115 -04:00 [INF] Executing OkObjectResult, writing value of type 'AccessControl.Application.Dtos.Common.GenericResponseDto`1[[System.Collections.Generic.IEnumerable`1[[AccessControl.Application.Dtos.LogEntity.LogEntityDto, AccessControl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-23 01:07:59.125 -04:00 [INF] Executed action AccessControl.Controllers.LogsController.GetLogEntities (AccessControl) in 204.0598ms
+2024-11-23 01:07:59.126 -04:00 [INF] Executed endpoint 'AccessControl.Controllers.LogsController.GetLogEntities (AccessControl)'
+2024-11-23 01:07:59.126 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44341/api/logs - 200 886 application/json; charset=utf-8 291.2115ms
+2024-11-23 01:08:04.506 -04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44341/api/users - null null
+2024-11-23 01:08:04.507 -04:00 [INF] CORS policy execution successful.
+2024-11-23 01:08:04.508 -04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44341/api/users - 204 null null 2.3551ms
+2024-11-23 01:08:04.513 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44341/api/users - null null
+2024-11-23 01:08:04.513 -04:00 [INF] CORS policy execution successful.
+2024-11-23 01:08:04.516 -04:00 [INF] Executing endpoint 'AccessControl.Controllers.UsersController.GetUsers (AccessControl)'
+2024-11-23 01:08:04.525 -04:00 [INF] Route matched with {action = "GetUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[AccessControl.Application.Dtos.Common.GenericResponseDto`1[System.Collections.Generic.IEnumerable`1[AccessControl.Application.Dtos.UserEntity.UserEntityDto]]]] GetUsers() on controller AccessControl.Controllers.UsersController (AccessControl).
+2024-11-23 01:08:04.564 -04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[CreatedDate], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UpdatedDate], [u].[UserName]
+FROM [Users] AS [u]
+2024-11-23 01:08:04.572 -04:00 [INF] Executing OkObjectResult, writing value of type 'AccessControl.Application.Dtos.Common.GenericResponseDto`1[[System.Collections.Generic.IEnumerable`1[[AccessControl.Application.Dtos.UserEntity.UserEntityDto, AccessControl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-23 01:08:04.577 -04:00 [INF] Executed action AccessControl.Controllers.UsersController.GetUsers (AccessControl) in 51.7935ms
+2024-11-23 01:08:04.577 -04:00 [INF] Executed endpoint 'AccessControl.Controllers.UsersController.GetUsers (AccessControl)'
+2024-11-23 01:08:04.578 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44341/api/users - 200 277 application/json; charset=utf-8 64.7224ms
+2024-11-23 01:08:14.592 -04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44341/api/users - null null
+2024-11-23 01:08:14.593 -04:00 [INF] CORS policy execution successful.
+2024-11-23 01:08:14.594 -04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44341/api/users - 204 null null 1.5915ms
+2024-11-23 01:08:14.596 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44341/api/users - null null
+2024-11-23 01:08:14.597 -04:00 [INF] CORS policy execution successful.
+2024-11-23 01:08:14.599 -04:00 [INF] Executing endpoint 'AccessControl.Controllers.UsersController.GetUsers (AccessControl)'
+2024-11-23 01:08:14.600 -04:00 [INF] Route matched with {action = "GetUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[AccessControl.Application.Dtos.Common.GenericResponseDto`1[System.Collections.Generic.IEnumerable`1[AccessControl.Application.Dtos.UserEntity.UserEntityDto]]]] GetUsers() on controller AccessControl.Controllers.UsersController (AccessControl).
+2024-11-23 01:08:14.603 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[CreatedDate], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UpdatedDate], [u].[UserName]
+FROM [Users] AS [u]
+2024-11-23 01:08:14.605 -04:00 [INF] Executing OkObjectResult, writing value of type 'AccessControl.Application.Dtos.Common.GenericResponseDto`1[[System.Collections.Generic.IEnumerable`1[[AccessControl.Application.Dtos.UserEntity.UserEntityDto, AccessControl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-23 01:08:14.606 -04:00 [INF] Executed action AccessControl.Controllers.UsersController.GetUsers (AccessControl) in 5.6028ms
+2024-11-23 01:08:14.606 -04:00 [INF] Executed endpoint 'AccessControl.Controllers.UsersController.GetUsers (AccessControl)'
+2024-11-23 01:08:14.607 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44341/api/users - 200 277 application/json; charset=utf-8 10.3112ms
+2024-11-23 01:08:24.620 -04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44341/api/users - null null
+2024-11-23 01:08:24.620 -04:00 [INF] CORS policy execution successful.
+2024-11-23 01:08:24.620 -04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44341/api/users - 204 null null 0.9286ms
+2024-11-23 01:08:24.623 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44341/api/users - null null
+2024-11-23 01:08:24.623 -04:00 [INF] CORS policy execution successful.
+2024-11-23 01:08:24.624 -04:00 [INF] Executing endpoint 'AccessControl.Controllers.UsersController.GetUsers (AccessControl)'
+2024-11-23 01:08:24.624 -04:00 [INF] Route matched with {action = "GetUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[AccessControl.Application.Dtos.Common.GenericResponseDto`1[System.Collections.Generic.IEnumerable`1[AccessControl.Application.Dtos.UserEntity.UserEntityDto]]]] GetUsers() on controller AccessControl.Controllers.UsersController (AccessControl).
+2024-11-23 01:08:24.676 -04:00 [INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[CreatedDate], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UpdatedDate], [u].[UserName]
+FROM [Users] AS [u]
+2024-11-23 01:08:24.677 -04:00 [INF] Executing OkObjectResult, writing value of type 'AccessControl.Application.Dtos.Common.GenericResponseDto`1[[System.Collections.Generic.IEnumerable`1[[AccessControl.Application.Dtos.UserEntity.UserEntityDto, AccessControl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-23 01:08:24.679 -04:00 [INF] Executed action AccessControl.Controllers.UsersController.GetUsers (AccessControl) in 54.4249ms
+2024-11-23 01:08:24.679 -04:00 [INF] Executed endpoint 'AccessControl.Controllers.UsersController.GetUsers (AccessControl)'
+2024-11-23 01:08:24.680 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44341/api/users - 200 277 application/json; charset=utf-8 56.8209ms
+2024-11-23 01:08:34.691 -04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44341/api/users - null null
+2024-11-23 01:08:34.691 -04:00 [INF] CORS policy execution successful.
+2024-11-23 01:08:34.692 -04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44341/api/users - 204 null null 1.4823ms
+2024-11-23 01:08:34.695 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44341/api/users - null null
+2024-11-23 01:08:34.696 -04:00 [INF] CORS policy execution successful.
+2024-11-23 01:08:34.696 -04:00 [INF] Executing endpoint 'AccessControl.Controllers.UsersController.GetUsers (AccessControl)'
+2024-11-23 01:08:34.696 -04:00 [INF] Route matched with {action = "GetUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[AccessControl.Application.Dtos.Common.GenericResponseDto`1[System.Collections.Generic.IEnumerable`1[AccessControl.Application.Dtos.UserEntity.UserEntityDto]]]] GetUsers() on controller AccessControl.Controllers.UsersController (AccessControl).
+2024-11-23 01:08:34.751 -04:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[CreatedDate], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UpdatedDate], [u].[UserName]
+FROM [Users] AS [u]
+2024-11-23 01:08:34.752 -04:00 [INF] Executing OkObjectResult, writing value of type 'AccessControl.Application.Dtos.Common.GenericResponseDto`1[[System.Collections.Generic.IEnumerable`1[[AccessControl.Application.Dtos.UserEntity.UserEntityDto, AccessControl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-23 01:08:34.753 -04:00 [INF] Executed action AccessControl.Controllers.UsersController.GetUsers (AccessControl) in 56.4617ms
+2024-11-23 01:08:34.753 -04:00 [INF] Executed endpoint 'AccessControl.Controllers.UsersController.GetUsers (AccessControl)'
+2024-11-23 01:08:34.754 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44341/api/users - 200 277 application/json; charset=utf-8 58.4941ms
+2024-11-23 01:08:44.772 -04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44341/api/users - null null
+2024-11-23 01:08:44.773 -04:00 [INF] CORS policy execution successful.
+2024-11-23 01:08:44.774 -04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44341/api/users - 204 null null 1.6926ms
+2024-11-23 01:08:44.777 -04:00 [INF] Request starting HTTP/2 GET https://localhost:44341/api/users - null null
+2024-11-23 01:08:44.777 -04:00 [INF] CORS policy execution successful.
+2024-11-23 01:08:44.778 -04:00 [INF] Executing endpoint 'AccessControl.Controllers.UsersController.GetUsers (AccessControl)'
+2024-11-23 01:08:44.778 -04:00 [INF] Route matched with {action = "GetUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[AccessControl.Application.Dtos.Common.GenericResponseDto`1[System.Collections.Generic.IEnumerable`1[AccessControl.Application.Dtos.UserEntity.UserEntityDto]]]] GetUsers() on controller AccessControl.Controllers.UsersController (AccessControl).
+2024-11-23 01:08:44.782 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[CreatedDate], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UpdatedDate], [u].[UserName]
+FROM [Users] AS [u]
+2024-11-23 01:08:44.821 -04:00 [INF] Executing OkObjectResult, writing value of type 'AccessControl.Application.Dtos.Common.GenericResponseDto`1[[System.Collections.Generic.IEnumerable`1[[AccessControl.Application.Dtos.UserEntity.UserEntityDto, AccessControl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-23 01:08:44.822 -04:00 [INF] Executed action AccessControl.Controllers.UsersController.GetUsers (AccessControl) in 43.6157ms
+2024-11-23 01:08:44.822 -04:00 [INF] Executed endpoint 'AccessControl.Controllers.UsersController.GetUsers (AccessControl)'
+2024-11-23 01:08:44.822 -04:00 [INF] Request finished HTTP/2 GET https://localhost:44341/api/users - 200 277 application/json; charset=utf-8 45.6638ms

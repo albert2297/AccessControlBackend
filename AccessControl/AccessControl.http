@@ -1,0 +1,6 @@
+@AccessControl_HostAddress = http://localhost:5086
+
+GET {{AccessControl_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
